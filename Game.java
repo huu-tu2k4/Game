@@ -58,4 +58,9 @@ public class Game {
 		window.add(control, BorderLayout.EAST);
 //		window.add
 	}
+
+	public static void ReStart() {
+//		GameManager gameManager = new GameManager();
+		GameManager.instance.restart();
+	}
 }

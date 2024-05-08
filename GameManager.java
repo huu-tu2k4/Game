@@ -180,4 +180,13 @@ public class GameManager {
 	public Player getCurrentPlayer() {
 		return PlayerList[currentPlayer];
 	}
+
+	public void restart() {
+		currentPlayer = 0;
+		int n = HorseOnBoard.size();
+		while (n > 0) {
+			HorseOnBoard.get(0).Die();
+			n--;
+		}
+	}
 }

@@ -19,7 +19,7 @@ public class Restart extends JButton {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Game.Start();
+				Game.ReStart();
 				PanelControl.update();
 			}
 
